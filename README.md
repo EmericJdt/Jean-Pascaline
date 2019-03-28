@@ -1,8 +1,6 @@
 ## Jean-Pascaline
 #### A simple C# Discord Bot
 
-[                                                                                                                                           ]
-
 * **Leveling System**
   * This bot has a very simple leveling system. When a user send a message he will gain between 15 and 30 experience points.
   * As the Owner, you can add or retrieve experience points.
