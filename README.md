@@ -1,5 +1,5 @@
 # Jean-Pascaline
-> The simpler C# Discord Bot
+> The simplest C# Discord Bot
 
 ## Informations
 [![](https://img.shields.io/badge/Project%20Status-In%20Progress-green?style=for-the-badge)](https://github.com/EmericJdt/SecretSantaBot/projects/1) ![](https://img.shields.io/badge/Programmation%20Language-C%23-brightgreen?style=for-the-badge) 
