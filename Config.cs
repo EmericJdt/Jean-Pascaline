@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Newtonsoft.Json;
 using System.IO;
-using System.Text;
-using Newtonsoft.Json;
 
 namespace JeanPascaline
 {
     class Config
     {
-        private const string configFolder = "Ressources";
+        private const string configFolder = "Ressources/Config";
         private const string configFile = "config.json";
+
+        // Get all the necessary data to proceed connexion.
 
         public static BotConfig bot;
         static Config()
@@ -32,8 +31,21 @@ namespace JeanPascaline
 
         public struct BotConfig
         {
-            public string token;
-            public string cmdPrefix;
+#pragma warning disable CS0649 // Le champ 'Config.BotConfig.Token' n'est jamais assigné et aura toujours sa valeur par défaut null
+            public string Token;
+#pragma warning restore CS0649 // Le champ 'Config.BotConfig.Token' n'est jamais assigné et aura toujours sa valeur par défaut null
+#pragma warning disable CS0649 // Le champ 'Config.BotConfig.NyahGifCount' n'est jamais assigné et aura toujours sa valeur par défaut 0
+            public int NyahGifCount;
+#pragma warning restore CS0649 // Le champ 'Config.BotConfig.NyahGifCount' n'est jamais assigné et aura toujours sa valeur par défaut 0
+#pragma warning disable CS0649 // Le champ 'Config.BotConfig.HugGifCount' n'est jamais assigné et aura toujours sa valeur par défaut 0
+            public int HugGifCount;
+#pragma warning restore CS0649 // Le champ 'Config.BotConfig.HugGifCount' n'est jamais assigné et aura toujours sa valeur par défaut 0
+#pragma warning disable CS0649 // Le champ 'Config.BotConfig.PatPatGifCount' n'est jamais assigné et aura toujours sa valeur par défaut 0
+            public int PatPatGifCount;
+#pragma warning restore CS0649 // Le champ 'Config.BotConfig.PatPatGifCount' n'est jamais assigné et aura toujours sa valeur par défaut 0
+#pragma warning disable CS0649 // Le champ 'Config.BotConfig.QuoteCount' n'est jamais assigné et aura toujours sa valeur par défaut 0
+            public int QuoteCount;
+#pragma warning restore CS0649 // Le champ 'Config.BotConfig.QuoteCount' n'est jamais assigné et aura toujours sa valeur par défaut 0
         }
     }
 }

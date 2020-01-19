@@ -1,0 +1,43 @@
+[
+  {
+    "$id": "1",
+    "ID": 471357240549310477,
+    "IsDevGuild": true,
+    "DefaultRoleID": 572088649479356416,
+    "ModeratorRoleID": 471367526153060352,
+    "AnnoucementChannelID": 572088649479356416,
+    "MusicChannelID": 634384782159118346,
+    "LogChannelID": 550086338397863942,
+    "MaxLevel": 70,
+    "IsAnnoncementMessagesEnabled": true,
+    "WarningsThreshold": 5,
+    "Language": "Default",
+    "Rewards": {
+      "$id": "2",
+      "666023121085661184": 15,
+    }
+  },
+  {
+    "$id": "3",
+    "ID": 161284551199424513,
+    "IsDevGuild": true,
+    "DefaultRoleID": 431112180331577346,
+    "ModeratorRoleID": 220167622191218689,
+    "AnnoucementChannelID": 250709034108321792,
+    "MusicChannelID": 554317551493185536,
+    "LogChannelID": 434680967584808971,
+    "MaxLevel": 70,
+    "IsAnnoncementMessagesEnabled": true,
+    "WarningsThreshold": 5,
+    "Language": "Default",
+    "Rewards": {
+      "$id": "4",
+      "439054979505061888": 211,
+      "470896056104910859": 411,
+      "457649468624601089": 3510,
+      "431112760387043331": 10890,
+      "436076984746115072": 22384,
+      "431121827079782420": 43816
+    }
+  }
+]

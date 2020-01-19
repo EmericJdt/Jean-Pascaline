@@ -1,0 +1,160 @@
+{
+  "SALUT": "Salut {0} ! <:AyanoBongoCat:629041865680748544>",
+  "PATPAT": "{0} patpat {1}.",
+  "HUG" : "{0} fait un câlin à {1}.",
+  "NYAH": "{0} utilise le pouvoir du nyah sur {1}.",
+  
+  "WELCOMEMESSAGE": "Bienvenue {0} <:FunOmaewamoushindeiru:430417362802704396>\nReservez-lui un accueil chalereux !",
+  "LEAVINGMESSAGE": "MALÉDICTION ! **{0}** a été brisé entre le temps et l'espace... <:FunKiss:430417443928932353>",
+  
+  "PROFILECARDNAME": "Pseudonyme :",
+  "PROFILECARDPRONOUNS": "Pronoms :",
+  "PROFILECARDJOINEDAT": "Arrivé.e sur le serveur le :",
+  "PROFILECARDDESCRIPTION": "Description :",
+  "PROFILECARDLEVEL": "Niveau actuel :",
+  "PROFILECARDWARNCOUNT": "Nombre d'avertissements :",
+  "PROFILECARDWARNLIST": "Avertissements :",
+  
+  "PROFILECHANGEDESCRIPTION": "{0} - Ta description a bien été modifiée. <:FunKiss:430417443928932353>",
+  "PROFILECHANGEPRONOUNS": "{0} - Tes pronoms ont bien été modifiés. <:FunKiss:430417443928932353>",
+  
+  "NOREWARDS": "{0} - Oh.. on dirait que je n'ai aucune récompense à te proposer. <:FunSuprised:430405269202403339>",
+  "REWARDSRESPONSE": "Voilà {0} ! Tu es actuellement niveau {1}, et de ce fait il te reste ces récompenses à obtenir. <:FunKiss:430417443928932353>",
+  
+  "INVITEREQUEST": "Voici l'invitation du serveur, utilise-la à bon escient. <{0}>",
+  
+  "LEVELUPCARDTITLE":"Vous avez gagné un niveau !",
+  "LEVELUPCARDLEVEL":"Niveau actuel : ",
+  "LEVELUPCARDXP": "Points d'expérience :",
+  
+  "INDEXCARDTITLE": "Commandes.",
+  "INDEXAUDIOCARDTITLE": "Commandes Audio.",
+  "INDEXMODCARDTITLE": "Commandes de Modération.",
+  "INDEXADMCARDTITLE": "Commandes d'Administration.",
+  "INDEXDEVCARDTITLE": "Commandes Spéciales.",
+  
+  "MODULELISTTITLE": "Liste des modules",
+  "MODULEFOOTEREMBED": "Utilise !{0} pour afficher les commandes de ce module.",
+  
+  "REWARDLISTTITLE": "Liste des récompenses.",
+  
+
+
+
+
+
+
+  "USERISNOTINVOICECHANNEL": "Tu n'es pas connecté.e dans un salon vocal.",
+  "BOTHASJOINED": "Bouge pas ! J'arrive dans {0} !",
+  "BOTHASLEAVED": "Ok, je pars de {0}.",
+  "SEARCHINGRESULT": "Voilà ce que j'ai trouvé ! Choisi une musique dans la liste.",
+  "NOMORETRACKS": "Il n'y a plus de musiques en liste d'attente.",
+  "TRACKADDEDTOQUEUE": "**{0}** a été ajouté à la liste d'attente.",
+  "TRACKISPLAYING": "Ok ! Je joue **{0}**",
+  "ERRORPLAYER": "Ah mince, je crois qu'il y a petit problème...",
+  "TRACKISSTOPPED": "La musique est arrété.",
+  "NOTHINGINQUEUE": "Je ne peux pas passer s'il n'y a pas d'autre musiques derrière. <:FunSuprised:430405269202403339>",
+  "TRACKISSKIPPED": "Ok, on oublie **{0}**, passons plutôt à **{1}**",
+  "PLAYERPAUSED": "Ok, je met la musique sur pause.",
+  "PLAYERRESUMED": "On reprend la musique ? Parfait. <:FunOmaewamoushindeiru:430417362802704396>",
+  "PLAYERWASNOTPLAYING" : "Je ne jouais pas de musique de base. <:FunSmirk:430417192098725888>",
+  "PLAYERWASNOTPAUSED": "Je joue déjà de la musique en fait... <:FunSuprised:430405269202403339>",
+  
+
+
+
+
+
+
+
+  "UNABLE": "**Il est impossible d'utiliser cette commande sur un Modérateur.** <:FunSmirk:430417192098725888>",
+  "ANNONCEBAN": "Reçu ! {0} **a été banni du serveur.<:FunSmirk:430417192098725888>\nRaison : {1}**",
+  "BANCARDTITLE": "[BANNISSEMENT]",
+  
+  "ANNONCEUNBAN": "Reçu ! {0} a été débanni du serveur.",
+  "UNBANCARDTITLE": "[REVOCATION DU BANNISSEMENT]",
+  
+  "ANNONCEKICK": "Reçu ! {0} **a été expulsé.e du serveur. <:FunSmirk:430417192098725888>\nRaison : {1} **",
+  "KICKCARDTITLE": "[EXPULSION]",
+  
+  "ANNONCEMUTE": "Reçu ! {0} **a été rendu muet. <:FunSuprised:430405269202403339>\nRaison : {1}**",
+  "MUTECARDTITLE": "[MUTE]",
+  
+  "ANNONCEUNMUTE": "Reçu ! {0} peut de nouveau s'exprimer.",
+  "UNMUTECARDTITLE": "[UNMUTE]",
+  
+  "ANNONCEWARN": "Reçu ! {0} **a reçu un avertissement. <:FunOmaewamoushindeiru:430417362802704396>\nRaison : {1}**",
+  "WARNCARDTITLE": "[AVERTISSEMENT]",
+  "WARNCARDCOUNTFIELD": "Nombre de warns :",
+  
+  "RETRAITWARNS": "Reçu ! Les avertissements de {0} ont été retirés. <:FunBlank:430417474068938762>",
+  "UNWARNCARDTITLE": "[RETRAIT D'AVERTISSEMENTS]",
+  
+  "CLEANMESSAGES": "{0} messages ont été supprimés. <:FunKiss:430417443928932353>",
+  "CLEARPROLILE": "Reçu ! Le profil de {0} a été remis à zéro. <:FunBlank:430417474068938762>",
+  
+  "CARDUSERFIELD": "Utilisateur :",
+  "CARDMODFIELD": "Modérateur :",
+  "CARDREASONFIELD": "Raison :",
+  
+  
+  
+  
+  
+  
+
+  "UNSUCESSFULGIVE": "{0} - Malheureusement {1} est déjà au niveau maximal. <:FunSuprised:430405269202403339>",
+  "UNSUCESSFULTAKE": "{0} - Malheureusement {1} n'a pas assez de points d'expériences. <:FunSmirk:430417192098725888>",
+  "GIVEXP": "Reçu ! {0} points d'expériences ont été donné à {1}. <:FunKiss:430417443928932353>",
+  "TAKEXP": "Reçu ! {0} points d'expériences ont été retiré à {1}. <:FunOmaewamoushindeiru:430417362802704396>",
+  
+  "REWARDADDED": "{0} - Le rôle a bien été ajouté aux récompenses. <:FunSmile:430404996752998410>",
+  "REWARDREMOVED": "{0} - Ce rôle a bien été retiré des récompenses. <:FunSmile:430404996752998410>",
+  
+  "SETWELCOMEMESSAGE": "{0} - Les messages d'accueil ont bien été activés. <:FunSmirk:430417192098725888>",
+  "REMOVEWELCOMEMESSAGE": "{0} - Les messages d'accueil ont bien été désactivés. <:FunKiss:430417443928932353>",
+ 
+  "CHANGESSAVED": "{0} - Le changement a bien été pris en compte. ",
+  "PARAMEMBEDFOTER": "Utilise !{0} pour changer le paramètre.",
+  
+  "LANGUAGELISTTITLE": "Liste des langues.",
+  "CODELISTTITLE": "Liste des codes.",
+  "SETLANGUAGE": "{0} - La langue du bot a bien été défini sur le Français. <:FunOmaewamoushindeiru:430417362802704396>",
+  
+
+
+
+
+
+
+  
+  "MOT1": "Il ne faut pas attendre d'être parfait pour commencer quelque chose de bien. - Abbé Pierre.\n",
+  "MOT2": "J'ai décidé d'etre heureux parce que c'est bon pour la santé. - Voltaire\n",
+  "MOT3": "Le succès n'est pas la clé du bonheur. Le bonheur est la clé du succês. Si vous aimez ce que vous faites, vous réussirez. - Albert Schweitzer\n",
+  "MOT4": "Le succès c'est d'aller d'échec en échec sans perdre son enthousiasme. - Winston Churchill\n",
+  "MOT5": "Les gagnants trouvent des moyens, les perdants des excuses. - Franklin D. Roosevelt\n",
+  "MOT6": "Certains veulent que ça arrive, d'autres aimeraient que ça arrive et d'autres font que ça arrive. - Michael Jordan\n",
+  "MOT7": "C'est ce que je me dis tout les matins, je vais bosser pour être 4 fois meilleur qu'eux. - Wil Aime.\n",
+  "MOT8": "Tout le monde est un génie. Mais si on juge un poisson sur sa capacité à grimper à un arbre, il passera sa vie à croire qu'il est stupide. - Albert Einstein\n",
+  "MOT9": "Je suis reconnaissant à tous ceux qui m'ont dit NON. C'est grâce à eux que je suis moi-même. - Albert Einstein\n",
+  "MOT10": "Celui qui n'est plus ton ami ne l'a jamais été. - Aristote\n",
+  "MOT11": "Dans vingt ans vous serez plus déçus par les choses que vous n'avez pas faites que par celles que vous avez faites. Alors sortez des sentiers battus. Mettez les voiles. Explorez. Rêvez. Découvrez. - Mark Twain\n",
+  "MOT12": "La plupart des choses importantes dans le monde ont été accomplies par des personnes qui ont continué à essayer quand il semblait y avoir aucun espoir. - Dale Carnegie\n",
+  "MOT13": "Pour réussir, retenez bien ces trois maximes: voir c'est savoir, vouloir c'est pouvoir, oser c'est avoir. - Alfred de Musset\n",
+  "MOT14": "Un pessimiste voit la difficulté dans chaque opportunité, un optimiste voit l'opportunité dans chaque difficulté. - Winston Churchill\n",
+  "MOT15": "Croyez en vos rêves et ils se réaliseront peut-être. Croyez en vous et ils se réaliseront sûrement. - Martin Luther King\n",
+  "MOT16": "Pour réussir, votre désir de réussite doit être plus grand que votre peur de l'échec - Bill Cosby\n",
+  "MOT17": "Si vous ne faites pas aujourd'hui ce que vous avez dans la tête, demain, vous l'aurez dans le cul. - Coluche\n",
+  "MOT18": "Les portes de l'avenir sont ouvertes à ceux qui savent les pousser. - Coluche\n",
+  "MOT19": "Viser la lune, ça ne me fait pas peur ! - Amel Bent\n",
+  "MOT20": "Si vous pensez que vous ne valez pas grand-chose, vous ne trouverez personne pour augmenter votre prix. - Michael Aguilar\n",
+
+
+
+
+
+
+  
+  "DEVWELCOMEMESSAGE": "Bienvenue dans mon humble sanctuaire {0} <:FunOmaewamoushindeiru:430417362802704396> \nN'aie crainte... Ici rien ne pourra t'atteindre ! <:FunSmirk:430417192098725888>\n**Je te protégerai de la machine** ~~et des sora-nazi~~.",
+  "DEVLEAVINGMESSAGE": "MALÉDICTION ! **{0}** a été brisé entre le temps et l'espace... <:FunKiss:430417443928932353>\n(Oui, j'ai merdé... <:FunBlank:430417474068938762>)"
+}
