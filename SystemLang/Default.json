@@ -91,7 +91,9 @@
   "UNWARNCARDTITLE": "[RETRAIT D'AVERTISSEMENTS]",
   
   "CLEANMESSAGES": "{0} messages ont été supprimés. <:FunKiss:430417443928932353>",
-  "CLEARPROLILE": "Reçu ! Le profil de {0} a été remis à zéro. <:FunBlank:430417474068938762>",
+  
+  "CLEARPROFILE": "Reçu ! Le profil de {0} a été remis à zéro. <:FunBlank:430417474068938762>",
+  "CLEARPROFILECARDTITLE": "[PROFIL REMIS À ZÉRO]"
   
   "CARDUSERFIELD": "Utilisateur :",
   "CARDMODFIELD": "Modérateur :",
