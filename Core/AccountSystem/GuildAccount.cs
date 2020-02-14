@@ -1,7 +1,4 @@
-﻿using Discord;
-using Discord.Commands;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace JeanPascaline.Core.AccountSystem
 {
@@ -22,6 +19,8 @@ namespace JeanPascaline.Core.AccountSystem
 
         public ulong ModeratorRoleID { get; set; }
 
+        public ulong MutedRoleID { get; set; }
+
         public ulong AnnoucementChannelID { get; set; }
 
         public ulong MusicChannelID { get; set; }
@@ -37,5 +36,7 @@ namespace JeanPascaline.Core.AccountSystem
         public string Language { get; set; }
 
         public Dictionary<ulong, uint> Rewards { get; set; }
+
+        public HashSet<string> ForbiddenWords { get; set; }
     };
 }

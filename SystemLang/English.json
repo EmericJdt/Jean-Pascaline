@@ -1,52 +1,53 @@
-/* ENGLISH TRANSLATION BY Wifithief */
-
 {
-/* GENERAL */
-
-  "SALUT": "Hey {0} ! <:AyanoBongoCat:629041865680748544>",
+  "SALUT": "Hey {0} ! {1}",
   "PATPAT": "{0} patpat's {1}.",
   "HUG" : "{0} gives a hug to {1}.",
   "NYAH": "{0} uses the almighty power of nyah on {1}.",
   
-  "WELCOME_MESSAGE": "Welcome {0} <:FunOmaewamoushindeiru430417362802704396>\nGive them a warm welcome !",
-  "LEAVING_MESSAGE": "SHIT ! **{0}** was shattered across time and space... <:FGKiss:430417443928932353>",
+  "WELCOMEMESSAGE": "Welcome {0} <:FunOmaewamoushindeiru430417362802704396>\nGive them a warm welcome !",
+  "LEAVINGMESSAGE": "SHIT ! **{0}** was shattered across time and space... <:FunKiss:430417443928932353>",
   
   "PROFILECARDNAME": "Pseudonym :",
   "PROFILECARDPRONOUNS": "Pronouns :",
   "PROFILECARDJOINEDAT": "Arrived on :",
   "PROFILECARDDESCRIPTION": "Description :",
   "PROFILECARDLEVEL": "Current level :",
-  "PROFILECARDCOINS": "JPMoney :",
   "PROFILECARDWARNCOUNT": "Number of warnings :",
   "PROFILECARDWARNLIST": "Warnings :",
-  
-  "PROFILECHANGEDESCRIPTION": "{0} - Your description has been modified.",
-  "PROFILECHANGEPRONOUNS": "{0} - Your pronouns have been modified.",
+  "PROFILECARDXP": "Experience points :",
+
+  "PROFILECHANGEDESCRIPTION": "{0} - Your description has been modified. <:FunKiss:430417443928932353>",
+  "PROFILECHANGEPRONOUNS": "{0} - Your pronouns have been modified. ",
+    
+  "NOREWARDS": "{0} - Oh.. seems like I don't have a reward for you. <:FunSuprised:430405269202403339>",
+  "REWARDSRESPONSE": "Here {0} ! For now you're level {1}, and there's still some rewards you can get. <:FunKiss:430417443928932353>",
+  "REWARDSCARDLEVEL": "Level {0} :", 
+  "REWARDLISTTITLE": "Liste des récompenses.",
   
   "INVITEREQUEST": "Here's the server's invite, use it wisely. <{0}>",
-  
-  "SHOPCARDTITLE": "Shop.",
-  "SHOPCARDALLROLESOWNED": "{0} - I've got nothing for you right now... <:FunKiss:430417443928932353>",
-  "SHOPCARDANSWER": "Okay {0}, here are the available roles. Currently, you have {1} JPMoney.\n If you would like to buy a role, answer me with the number that corresponds with the role in question. <:FunSmirk:430417192098725888>",
-  "SHOPCARDVALIDATE": "{0} - Great ! You bought {0} for {1} JPMoney. <:FunKiss:430417443928932353> ",
-  "SHOPCARDNOTENOUGHMONEY": "{0} - You don't have enough JPMoney to buy this role. You're basically broke. <:FunOmaewamoushindeiru:430417362802704396>",
-  "SHOPCARDPREVIOUSREWARDSMISSING": "{0} - You don't have the precendent roles, you cannot buy this one for now <:FunSuprised:430405269202403339>",
-  "SHOPALREADYOWNED": "{0} - Tu possèdes déjà ce rôle. <:FunBlank:430417474068938762>",
-  
+ 
   "LEVELUPCARDTITLE":"LEVEL UP !",
-  "LEVELUPCARDLEVEL":"**Current level :** ",
-  "LEVELUPCARDXP": "**Experience points :**",
+  "LEVELUPCARDLEVEL":"Current level :",
+  "LEVELUPCARDXP": "Experience points :",
   
   "INDEXCARDTITLE": "Commands.",
   "INDEXAUDIOCARDTITLE": "Audio Commands.",
   "INDEXMODCARDTITLE": "Moderation Commands.",
   "INDEXADMCARDTITLE": "Administration Commands.",
-  
-/* AUDIO */
+  "INDEXDEVCARDTITLE": "Special Commands.",
+
+  "MODULELISTTITLE": "Modules list",
+  "MODULEFOOTEREMBED": "Use !{0} to show commands.",
+ 
+
+
+
+
+
 
   "USERISNOTINVOICECHANNEL": "You're not in a voice channel.",
-  "BOTHASJOINED": "Don't move ! I'm coming in {0} !",
-  "BOTHASLEAVED": "Ok, i'm leaving {0}.",
+  "BOTHASJOINED": "Don't move ! I'm coming in \"**{0}**\" !",
+  "BOTHASLEAVED": "Ok, i'm leaving \"**{0}**\".",
   "SEARCHINGRESULT": "Here's what I've found ! Choose a track from the list.",
   "NOMORETRACKS": "There's no music in the queue.",
   "TRACKADDEDTOQUEUE": "\"**{0}**\" has been added to the queue.",
@@ -56,90 +57,91 @@
   "NOTHINGINQUEUE": "I can't skip the track if there's nothing in the queue. <:FunSuprised:430405269202403339>",
   "TRACKISSKIPPED": "Alright, let's forget \"**{0}**\"and skip to \"**{1}**\"",
   "PLAYERPAUSED": "Ok, I'll pause the player.",
+  "PLAYERVOLUMEUPDATED": "The volume has been adjusted to {0}.",
   "PLAYERRESUMED": "Want to keep listening ? Ok. <:FunOmaewamoushindeiru:430417362802704396>",
   "PLAYERWASNOTPLAYING" : "I wasn't playing anything in the first place. <:FunSmirk:430417192098725888>",
   "PLAYERWASNOTPAUSED": "I'm already playing music... <:FunSmirk:430417192098725888>",
-  
-/* MODERATION */
+  "ONLYONEVOTE": "You can't vote twice. <:FunSmirk:430417192098725888>",
+  "NOTRACKSONQUEUE": "There's no music in the queue... <:FunSuprised:430405269202403339>",
+  "LOWPERCENTAGE": "Too bad ! At least 50 percent of the people present must agree to have your music played. <:FunSmirk:430417192098725888>",
+  "REPEATSTATECHANGED": "Ok ! It's been noted. <:FunKiss:430417443928932353>",
+  "QUEUECARDTITLE": "Playlist.",
 
-  "UNABLE": "**It's impossible to use this command on a Moderator.** <:FunSuprised:430405269202403339>",
-  "ANNONCEBAN": "**Received ! {0} was banned from the server. Motive : {1}**",
+
+
+
+
+
+
+  "COMMANDONMOD": "**It's impossible to use this command on a Moderator.** <:FunSuprised:430405269202403339>",
+  "DENIED": "You don't have the permission to use this command. <:FunKiss:430417443928932353>",
+	
+  "ANNONCEBAN": "**Received ! {0} was banned from the server.\nMotive : {1}**",
   "BANCARDTITLE": "[BAN]",
   
   "ANNONCEUNBAN": "**Motive ! {0}** was banned from the server.**",
   "UNBANCARDTITLE": "[UNBAN]",
   
-  "ANNONCEKICK": "**Got it ! {0} was kicked from the server. Reason : {1} **",
+  "ANNONCEKICK": "**Got it ! {0} was kicked from the server.\nReason : {1} **",
   "KICKCARDTITLE": "[KICK]",
   
-  "ANNONCEMUTE": "**Got it ! {0} has been muted. Reason : {1}**",
+  "ANNONCEMUTE": "**Got it ! {0} has been muted.\nReason : {1}**",
   "MUTECARDTITLE": "[MUTE]",
   
   "ANNONCEUNMUTE": "**Got it ! {0} has been unmuted.**",
   "UNMUTECARDTITLE": "[UNMUTE]",
   
-  "ANNONCEWARN": "**Got it ! {0} has received a warning. Reason : {1}**",
+  "ANNONCEWARN": "**Got it ! {0} has received a warning.\nReason : {1}**",
   "WARNCARDTITLE": "[WARN]",
   "WARNCARDCOUNTFIELD": "Number of warnings :",
   
   "RETRAITWARNS": "**Got it ! {0} warnings have been cleared.**",
   "UNWARNCARDTITLE": "[UNWARN]",
   
+  "CLEANMESSAGES": "{0} messages have been deleted. <:FunKiss:430417443928932353>",
+  
+  "CLEARPROFILE": "Got it ! {0}'s profile has been reset.\nReason : {1}<:FunBlank:430417474068938762>",
+  "CLEARPROFILECARDTITLE": "[PROFILE RESET]",
+  
+  "INVITEREQUESTCARDTITLE": "[INVITE REQUEST]",
+  
   "CARDUSERFIELD": "User :",
   "CARDMODFIELD": "Moderator :",
   "CARDREASONFIELD": "Reason :",
   
-  
-/* ADMINISTRATION */
 
-  "UNSUCESSFULGIVE": "{0} - Sadly {1} is already at the highest level.",
-  "UNSUCESSFULTAKE": "{0} - Sadly {0} doesn't have enough expierence points.",
+
+  
+  
+  
+  
+  "UNSUCESSFULGIVE": "Sadly {0} is already at the highest level.",
+  "UNSUCESSFULTAKE": "Sadly {0} doesn't have enough expierence points.",
   "GIVEXP": "Got it ! {0} experience points have been given to {1}.",
   "TAKEXP": "Got it ! {0} experience points have been taken away from {1}.",
-  "SETMAXLEVEL": "{0} - The maximum level has been changed to {1}.",
-  "MAXLEVELTHRESHOLD": "{0} - The maximum level cannot surpass 747 !",
   
-  "SETDEFAULTCHANNEL": "{0} - The channel {1} has become the server's default annoucment channel.",
-  "SETDEAULTROLE": "{0} - The role {1} has become the default role.",
-  "SETLOGCHANNEL":"{0} - The channel {1} has been set as the log channel.",
-  "SETMUSICCHANNEL":"{0} - The channel {1} has been set as the music channel.",
-  "SETMODERATORROLE": "{0} - The role {1} has become the moderator role.",
+  "REWARDADDED": "{0} - The role was successfully added to rewards. <:FunBlank:430417474068938762>",
+  "REWARDREMOVED": "{0} - The role was successfully removed from rewards. <:FunSmile:430404996752998410>",
   
-  "ALREADYEXISTING": "{0} - This role is already for sale. <:FunBlank:430417474068938762>",
-  "SUCCESFULREWARD": "{0} - The role was successfully put up for sale. <:FunSmile:430404996752998410>",
+  "WORDADDED": "{0} - This word has been added to the banned list. <:FunSmile:430404996752998410>",
+  "WORDREMOVED": "{0} - This word has been removed from the banned list. <:FunSmile:430404996752998410>",
 
-  "NOTEXISTING": "{0} - This role isn't for sale. <:FunSuprised:430405269202403339>",
-  "REMOVEDREWARD": "{0} - This role has been removed from the shop. <:FunSmile:430404996752998410>",
-  
   "SETWELCOMEMESSAGE": "{0} - The welcome message has been activated.",
   "REMOVEWELCOMEMESSAGE": "{0} - The welcome message has been disactivated.",
+    
+  "CHANGESSAVED": "{0} - This change has been put in place.",
+  "PARAMEMBEDFOOTER": "Use !{0} to change the setting.",
   
-  "CHANGEPREFIX": "{0} - The prefix has been modified.",
-  
-  "LANGUAGECHOICEMENU": "{0} - Here are the available languages: select a language and mention the corresponding number in your next message.",
+  "LANGUAGELISTTITLE": "Language list.",
+  "CODELISTTITLE": "Codes list.",
   "SETLANGUAGE": "{0} - The bot's language has set to english.",
   
   
-  /* CONFIGURATION */
   
-  "CONFIGVALIDATELANGUAGE": "Alright ! The set language is english .",
-  "CONFIGPHRASE1": "I have a functionality where I am able to send a message when a user joins and leaves the server.\nWould you like to activate it?",
-  "CONFIGVALIDATEANNOUNCEMENT": "Alright, I'll send announcements in the channel.",
-  "CONFIGDENIEDANNOUCEMENT": "No problemo, we'll work without it.",
-  "CONFIGPHRASE2": "In order to function better, could you give me a written channel for announcements, a written channel where you can use music commands and a written channel where I can send logs ?\n Mention them in order in your next message.",
-  "CONFIGPHRASE3": "Great ! There's not much left to do.\nI work with a system which you can modify later on.\nI need a default role to give to newcomers, mention this role please.",
-  "CONFIGPHRASE4": "Great ! Thanks {0} for configuring me.\n You can type !index to get the command list.\nDon't forget to put my role on top of the ones you want to be manageable.",
-  "CONFIGCHOICEERROR": "I didn't understand your request, could you repeat that ?.",
-
-  /* (DO NOT TRANSLATE) */
   
-  "CONFIGPAGE1": "Bonjour {0}.\nMerci de m'avoir invité ici.\n```Hello {1}. Thank you for making me join here.```",
-  "CONFIGPAGE2": "Pour faciliter mon utilisation, je te propose de commencer dès maintenant ma configuration.\n```To make your experience better, I think we should start my configuration now.```",
-  "CONFIGPAGE3": "Pour commencer, sélectionne une langue parmi la liste suivante en répondant le numéro.\n```First of all, please select a language between those by responding with the according number.```",
-  "CONFIGPAGE4": "```apache\n1 - Français\n2 - English\n```",
-  "CONFIGERROR": "Je n'ai pas compris ton choix, vérifie que tu as bien répondu un numéro parmi la liste et réesaye.\n```I was unable to understand your choice, please verify your choice and retry.```", 
   
-  /* MOTIVATION QUOTES (THEY CAN BE REPLACED, NOT THE 7th) */
+  
+  
   
   "MOT1": "You can't wait until you're perfect to begin something good. - Abbé Pierre.\n",
   "MOT2": "I've decided to be happy because it's good for my health. - Voltaire\n",
@@ -161,10 +163,4 @@
   "MOT18": "The future's doors are open to those willing to open them. - Coluche\n",
   "MOT19": "Shooting for the stars doesn't scare me ! - Amel Bent\n",
   "MOT20": "If you think that you're not worth a lot, you'll never find someone to up your worth. - Michael Aguilar\n",
-  
-  /*DEVGUILDS SPECIALS* (DO NOT TRANSLATE)*/
-  
-  "DEVDMMESSAGE": "Bonjour à toi, bienvenue dans mon humble sanctuaire.\nN'aie crainte... Tant que tu respèctes les <#161284551199424513> la machine ne t'atteindra pas!\nN'hésite pas non plus à consultez le <#553572737998651412> si tu as des questions.\nPour être au courant des sorties de vidéos d'UNTER et des nouveatés de Yandere Simulator, rendez-vous dans <#386261676619595776>\n**Ramen**",
-  "DEVWELCOMEMESSAGE": "Bienvenue dans mon humble sanctuaire {0} <:FGToiTuVasPasVivreLongtemps:430417362802704396> \nN'aie crainte... Ici rien ne pourra t'atteindre ! <:FGSmirk:430417192098725888>\n**Je te protègerai de la machine** ~~et des sora-nazi~~.",
-  "DEVLEAVINGMESSAGE": "MALÉDICTION ! **{0}** a été brisé entre le temps et l'espace... <:FGKiss:430417443928932353>\n (Oui, j'ai merdé... <:FGBlank:430417474068938762>)"
 }

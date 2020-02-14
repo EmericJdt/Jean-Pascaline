@@ -16,24 +16,24 @@ namespace JeanPascaline.Core.AccountSystem
         {
             foreach (SocketGuild Guild in Program._client.Guilds)
             {
-                if (DataStorage.SaveExiste(@"Ressources\Guilds\" + Guild.Id + ".json"))
+                if (DataStorage.SaveExiste(@"Ressources/Guilds/" + Guild.Id + ".json"))
                 {
-                    ListAccount = DataStorage.LoadUserAccounts("Ressources/Guilds/" + Guild.Id + ".json").ToList();
+                    ListAccount = DataStorage.LoadUserAccounts(@"Ressources/Guilds/" + Guild.Id + ".json").ToList();
                     GuildsList.Add(Guild.Id, ListAccount);
                 }
                 else
                 {
-                    DataStorage.CreateFile(@"Ressources\Guilds\" + Guild.Id + ".json");
+                    DataStorage.CreateFile(@"Ressources/Guilds/" + Guild.Id + ".json");
                     ListAccount = new List<UserAccount>();
                     GuildsList.Add(Guild.Id, ListAccount);
-                    DataStorage.SaveUserAccounts(ListAccount, @"Ressources\Guilds\" + Guild.Id + ".json");
+                    DataStorage.SaveUserAccounts(ListAccount, @"Ressources/Guilds/" + Guild.Id + ".json");
                 }
             }
         }
 
         public static void SaveAccounts(ulong GuildID)
         {
-            DataStorage.SaveUserAccounts(GuildsList[GuildID], @"Ressources\Guilds\" + GuildID + ".json");
+            DataStorage.SaveUserAccounts(GuildsList[GuildID], @"Ressources/Guilds/" + GuildID + ".json");
         }
 
         public static UserAccount GetAccount(SocketUser user, ulong GuildID)
@@ -44,9 +44,9 @@ namespace JeanPascaline.Core.AccountSystem
         private static UserAccount GetOrCreateAccount(ulong id, string hashcode, ulong GuildID)
         {
             ListAccount = GuildsList[GuildID];
-            var result = from a in ListAccount
-                         where a.ID == id
-                         select a;
+            IEnumerable<UserAccount> result = from a in ListAccount
+                                              where a.ID == id
+                                              select a;
             UserAccount account = result.FirstOrDefault();
             if (account == null) account = CreateUserAccount(id, hashcode, GuildID);
             return account;

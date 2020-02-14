@@ -1,5 +1,5 @@
 {
-  "SALUT": "Salut {0} ! <:AyanoBongoCat:629041865680748544>",
+  "SALUT": "Salut {0} ! {1}",
   "PATPAT": "{0} patpat {1}.",
   "HUG" : "{0} fait un câlin à {1}.",
   "NYAH": "{0} utilise le pouvoir du nyah sur {1}.",
@@ -9,21 +9,24 @@
   
   "PROFILECARDNAME": "Pseudonyme :",
   "PROFILECARDPRONOUNS": "Pronoms :",
-  "PROFILECARDJOINEDAT": "Arrivé.e sur le serveur le :",
+  "PROFILECARDJOINEDAT": "Date d'arrivé :",
   "PROFILECARDDESCRIPTION": "Description :",
   "PROFILECARDLEVEL": "Niveau actuel :",
   "PROFILECARDWARNCOUNT": "Nombre d'avertissements :",
   "PROFILECARDWARNLIST": "Avertissements :",
+  "PROFILECARDXP": "Points d'expériences :",
   
   "PROFILECHANGEDESCRIPTION": "{0} - Ta description a bien été modifiée. <:FunKiss:430417443928932353>",
   "PROFILECHANGEPRONOUNS": "{0} - Tes pronoms ont bien été modifiés. <:FunKiss:430417443928932353>",
   
   "NOREWARDS": "{0} - Oh.. on dirait que je n'ai aucune récompense à te proposer. <:FunSuprised:430405269202403339>",
   "REWARDSRESPONSE": "Voilà {0} ! Tu es actuellement niveau {1}, et de ce fait il te reste ces récompenses à obtenir. <:FunKiss:430417443928932353>",
+  "REWARDSCARDLEVEL": "Niveau {0} :",
+  "REWARDLISTTITLE": "Liste des récompenses.",
   
   "INVITEREQUEST": "Voici l'invitation du serveur, utilise-la à bon escient. <{0}>",
   
-  "LEVELUPCARDTITLE":"Vous avez gagné un niveau !",
+  "LEVELUPCARDTITLE":"VOUS AVEZ GAGNÉ UN NIVEAU !",
   "LEVELUPCARDLEVEL":"Niveau actuel : ",
   "LEVELUPCARDXP": "Points d'expérience :",
   
@@ -36,8 +39,6 @@
   "MODULELISTTITLE": "Liste des modules",
   "MODULEFOOTEREMBED": "Utilise !{0} pour afficher les commandes de ce module.",
   
-  "REWARDLISTTITLE": "Liste des récompenses.",
-  
 
 
 
@@ -45,29 +46,36 @@
 
 
   "USERISNOTINVOICECHANNEL": "Tu n'es pas connecté.e dans un salon vocal.",
-  "BOTHASJOINED": "Bouge pas ! J'arrive dans {0} !",
-  "BOTHASLEAVED": "Ok, je pars de {0}.",
+  "BOTHASJOINED": "Bouge pas ! J'arrive dans \"**{0}**\" !",
+  "BOTHASLEAVED": "Ok, je pars du vocal \"**{0}**\".",
   "SEARCHINGRESULT": "Voilà ce que j'ai trouvé ! Choisi une musique dans la liste.",
   "NOMORETRACKS": "Il n'y a plus de musiques en liste d'attente.",
   "TRACKADDEDTOQUEUE": "**{0}** a été ajouté à la liste d'attente.",
-  "TRACKISPLAYING": "Ok ! Je joue **{0}**",
+  "TRACKISPLAYING": "Ok ! Je joue \"**{0}**\"",
   "ERRORPLAYER": "Ah mince, je crois qu'il y a petit problème...",
   "TRACKISSTOPPED": "La musique est arrété.",
   "NOTHINGINQUEUE": "Je ne peux pas passer s'il n'y a pas d'autre musiques derrière. <:FunSuprised:430405269202403339>",
   "TRACKISSKIPPED": "Ok, on oublie **{0}**, passons plutôt à **{1}**",
   "PLAYERPAUSED": "Ok, je met la musique sur pause.",
+  "PLAYERVOLUMEUPDATED": "Le volume a été ajusté à {0}.",
   "PLAYERRESUMED": "On reprend la musique ? Parfait. <:FunOmaewamoushindeiru:430417362802704396>",
   "PLAYERWASNOTPLAYING" : "Je ne jouais pas de musique de base. <:FunSmirk:430417192098725888>",
   "PLAYERWASNOTPAUSED": "Je joue déjà de la musique en fait... <:FunSuprised:430405269202403339>",
+  "ONLYONEVOTE": "Tu ne peux pas voter deux fois. <:FunSmirk:430417192098725888>",
+  "NOTRACKSONQUEUE": "Il n'y a pas de musiques dans la liste de lecture... <:FunSuprised:430405269202403339>",
+  "LOWPERCENTAGE": "Dommage ! Il faut que 50% des personnes présentes décide de passer cette musique. <:FunSmirk:430417192098725888>",
+  "REPEATSTATECHANGED": "Ok ! C'est pris en compte. <:FunKiss:430417443928932353>",
+  "QUEUECARDTITLE": "Liste de lecture.",
+
+
+
+
+
+
+
+  "COMMANDONMOD": "Il est impossible d'utiliser cette commande sur un Modérateur. <:FunSmirk:430417192098725888>",
+  "DENIED": "Vous n'avez pas la permission d'utiliser cette commande. <:FunKiss:430417443928932353>",
   
-
-
-
-
-
-
-
-  "UNABLE": "**Il est impossible d'utiliser cette commande sur un Modérateur.** <:FunSmirk:430417192098725888>",
   "ANNONCEBAN": "Reçu ! {0} **a été banni du serveur.<:FunSmirk:430417192098725888>\nRaison : {1}**",
   "BANCARDTITLE": "[BANNISSEMENT]",
   
@@ -92,8 +100,10 @@
   
   "CLEANMESSAGES": "{0} messages ont été supprimés. <:FunKiss:430417443928932353>",
   
-  "CLEARPROFILE": "Reçu ! Le profil de {0} a été remis à zéro. <:FunBlank:430417474068938762>",
-  "CLEARPROFILECARDTITLE": "[PROFIL REMIS À ZÉRO]"
+  "CLEARPROFILE": "Reçu ! Le profil de {0} a été remis à zéro.\nRaison : {1} <:FunBlank:430417474068938762>",
+  "CLEARPROFILECARDTITLE": "[PROFIL REMIS À ZÉRO]",
+  
+  "INVITEREQUESTCARDTITLE": "[DEMANDE D'INVITATION]",
   
   "CARDUSERFIELD": "Utilisateur :",
   "CARDMODFIELD": "Modérateur :",
@@ -105,25 +115,28 @@
   
   
 
-  "UNSUCESSFULGIVE": "{0} - Malheureusement {1} est déjà au niveau maximal. <:FunSuprised:430405269202403339>",
-  "UNSUCESSFULTAKE": "{0} - Malheureusement {1} n'a pas assez de points d'expériences. <:FunSmirk:430417192098725888>",
+  "UNSUCESSFULGIVE": "Malheureusement {0} est déjà au niveau maximal. <:FunSuprised:430405269202403339>",
+  "UNSUCESSFULTAKE": "Malheureusement {0} n'a pas assez de points d'expériences. <:FunSmirk:430417192098725888>",
   "GIVEXP": "Reçu ! {0} points d'expériences ont été donné à {1}. <:FunKiss:430417443928932353>",
   "TAKEXP": "Reçu ! {0} points d'expériences ont été retiré à {1}. <:FunOmaewamoushindeiru:430417362802704396>",
   
   "REWARDADDED": "{0} - Le rôle a bien été ajouté aux récompenses. <:FunSmile:430404996752998410>",
   "REWARDREMOVED": "{0} - Ce rôle a bien été retiré des récompenses. <:FunSmile:430404996752998410>",
   
+  "WORDADDED": "{0} - Ce mot a bien été ajouté à la liste des mots interdits. <:FunSmile:430404996752998410>",
+  "WORDREMOVED": "{0} - Ce mot a bien été retiré à la liste des mots interdits. <:FunSmile:430404996752998410>",
+  
   "SETWELCOMEMESSAGE": "{0} - Les messages d'accueil ont bien été activés. <:FunSmirk:430417192098725888>",
   "REMOVEWELCOMEMESSAGE": "{0} - Les messages d'accueil ont bien été désactivés. <:FunKiss:430417443928932353>",
  
   "CHANGESSAVED": "{0} - Le changement a bien été pris en compte. ",
-  "PARAMEMBEDFOTER": "Utilise !{0} pour changer le paramètre.",
+  "PARAMEMBEDFOOTER": "Utilise !{0} pour changer le paramètre.",
   
   "LANGUAGELISTTITLE": "Liste des langues.",
   "CODELISTTITLE": "Liste des codes.",
   "SETLANGUAGE": "{0} - La langue du bot a bien été défini sur le Français. <:FunOmaewamoushindeiru:430417362802704396>",
   
-
+	
 
 
 
@@ -152,11 +165,51 @@
   "MOT20": "Si vous pensez que vous ne valez pas grand-chose, vous ne trouverez personne pour augmenter votre prix. - Michael Aguilar\n",
 
 
+	
 
-
-
-
+	
+  "YUKUE0": "Si le sort m'était favorable je n'aurais jamais commencé ce jeu... — Dzéta",
+  "YUKUE1": "Il n'y a que les faibles qui ont besoin de toucher les gens pour les mettre en pièces. — Dzéta",
+  "YUKUE2": "LES FILLES ! Qui à encore oublié de tirer la chasse !? — Dzéta",
+  "YUKUE3": "Oh... tu veux m'aider c'est tellement gentil... Qu'est-ce que tu veux ? — Dzéta",
+  
+  "YUKUE4": "Très drôle. — Alpha",
+  "YUKUE5": "Toi ? Professionnelle ?! Professionnelle des plans foireux plutôt... — Alpha",
+  "YUKUE6": "Fais-moi plaisir Epsilon, range ta lame tu vas te faire mal. — Alpha",
+  
+  "YUKUE7": "Ah... Tu crois qu'on vit dans un monde de SF ? — Tau",
+  "YUKUE8": "Oui oui, on a bien joué aux dames hier soir. — Tau",
+  "YUKUE9": "J-j-j’ai... juste un mauvais présentiment. — Tau",
+  
+  "YUKUE10": "Oh ! T'es tombée sur un sacré poisson Omi-chi... — Oméga",
+  "YUKUE11": "Bah tiens ! A croire qu'on a toutes un casque sur la tête en permanence. — Oméga",
+  "YUKUE12": "Sigma... Jouer aux dames n'est pas une activité qui est censé être pratiqué en couple... — Oméga",
+  
+  "YUKUE13": "Je te laisse dix secondes pour décliner ton identité, passé ce délai ce toit risque de changer de couleur. — Epsilon",
+  "YUKUE14": "Rien à foutre, tu crèves. — Epsilon",
+  "YUKUE15": "Alors, je l'élimine ? — Epsilon",
+  
+  "YUKUE16": "Chut... Laisse-la moi un moment~ — Sigma",
+  "YUKUE17": "Si ça ne vous dérange pas, Tau et moi on va prendre une chambre deux places pour... vous voyez ce que je veux dire ? — Sigma",
+  "YUKUE18": "Pourquoi tu tiens tant à te préocuper de la façon dont on te regarde ? — Sigma",
+  
+  "YUKUE19": "Je savais que vous êtiez assez limité chez Azrom, mais de là à être ami avec une épée, franchement. — Omicron",
+  "YUKUE20": "Soit tu la fermes, soit tu crèves. — Têta",
+  "YUKUE21": "Tu n'as jamais été démembré vivant ? Écoute... y'a un début à tout. — Gamma",
+  
+  "YUKUE22": "... - ######",
+  "YUKUE23": "Sabrine : \"On va mourir\" ?\nEpsilon: \"Oui.\"",
+  "YUKUE24": "Dzéta : \"Attends ! Tu vas passer par la porte ?! Tu peux voyager à travers les timelines et t'es même pas foutue de te téléporter à deux mètres ?!\"\nAlpha : \"Oh ! J'ai pas le budget... puis de toute façon j'ai un double des clés.\"",
+  "YUKUE25": "Si tu veux m'aider, pourquoi tu portes un masque toi aussi ? — Tau",
+  "YUKUE26": "T'es mignonne mais laisse-moi te rappeler quelque chose... Tu n'as pas le niveau pour pouvoir ne serais-ce que me menacer. — Oméga",
+  "YUKUE27": "Têta : \"Celle qui en tue le moins paye toutes les tournées !!!\"\nGamma :\"J'espère que tu te diriges vers le bar là !!\"",
+  "YUKUE28": "Alpha : \"Dzéta qu'est-ce que tu branles ...?\"\nDzéta : \"Bah ça se voit non ? Je joue au scrabble.\"",
+  "YUKUE29": "Tau : \"Dis... toi tu ne mentiras jamais hein ?\"\nSigma : \"Si tu fermes les yeux en disant ça c'est que tu connais déjà la réponse.\"",
+  "YUKUE30": "Attends. Tu parles de YUKUE, YUKUE, YUKUE ou YUKUE ?!",
+  
   
   "DEVWELCOMEMESSAGE": "Bienvenue dans mon humble sanctuaire {0} <:FunOmaewamoushindeiru:430417362802704396> \nN'aie crainte... Ici rien ne pourra t'atteindre ! <:FunSmirk:430417192098725888>\n**Je te protégerai de la machine** ~~et des sora-nazi~~.",
   "DEVLEAVINGMESSAGE": "MALÉDICTION ! **{0}** a été brisé entre le temps et l'espace... <:FunKiss:430417443928932353>\n(Oui, j'ai merdé... <:FunBlank:430417474068938762>)"
 }
+
+

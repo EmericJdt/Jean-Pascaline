@@ -16,10 +16,9 @@ namespace JeanPascaline
 {
     public class Program
     {
-
         public static CommandService _commands;
         public static DiscordSocketClient _client;
-        public IServiceProvider _services;
+        public static IServiceProvider _services;
 
         public static void Main() => new Program().MainAsync().GetAwaiter().GetResult();
         public async Task MainAsync()
@@ -37,9 +36,10 @@ namespace JeanPascaline
 
             _commands = new CommandService(new CommandServiceConfig
             {
-                LogLevel = LogSeverity.Debug,
-                CaseSensitiveCommands = false
-
+                LogLevel = LogSeverity.Verbose,
+                CaseSensitiveCommands = false,
+                DefaultRunMode = RunMode.Async,
+                IgnoreExtraArgs = true,
             });
 
             _services = new ServiceCollection()
@@ -48,15 +48,34 @@ namespace JeanPascaline
                 .AddSingleton<InteractiveService>()
                 .AddSingleton<LavaConfig>()
                 .AddSingleton<LavaNode>()
-                .AddSingleton<MusicService>()
+                .AddSingleton<AudioService>()
+                .AddLogging()
                 .BuildServiceProvider();
 
-            await _services.GetRequiredService<MusicService>().InitializeAsync();
-            await _commands.AddModulesAsync(Assembly.GetEntryAssembly(), _services);
-
-            Utilities.InitializeAlerts();
+            UtilitiesService.InitializeAlerts();
             await InstalEventHandler();
+
+            ConsoleInput();
+
             await Task.Delay(-1);
+        }
+
+        private void ConsoleInput()
+        {
+            string input = string.Empty;
+            while (input.Trim().ToLower() != ";")
+            {
+                input = Console.ReadLine();
+                if (input.Trim().ToLower() == "stop")
+                {
+                    GuildAccounts.SaveGuilds();
+                    _client.LogoutAsync();
+                    _client.StopAsync();
+                    _client.Dispose();
+                    Console.WriteLine("Arret du programme.");
+                    Environment.Exit(0);
+                }
+            }
         }
 
         private Task Log(LogMessage msg)
@@ -100,12 +119,28 @@ namespace JeanPascaline
             int argPos = 0;
             if (Message.HasStringPrefix("!", ref argPos))
             {
+                await context.Message.DeleteAsync();
                 IResult result = await _commands.ExecuteAsync(context, argPos, _services, MultiMatchHandling.Best);
                 if (!result.IsSuccess)
                 {
-                    await context.Channel.SendMessageAsync(result.ErrorReason);
+                    EmbedBuilder ResponseEmbed = UtilitiesService.CreateEmbed(Color.Red, result.ErrorReason);
+                    await context.Channel.SendMessageAsync(embed: ResponseEmbed.Build());
                 }
                 return;
+            }
+
+            // Check if message contains forbidden words
+
+            if (GuildData.ForbiddenWords.Count != 0 && context.User.Id != context.Guild.OwnerId)
+            {
+                foreach (string ForbiddenWord in GuildData.ForbiddenWords)
+                {
+                    if (context.Message.Content.ToLower().Contains(ForbiddenWord.ToLower()))
+                    {
+                        await context.Message.DeleteAsync();
+                        return;
+                    }
+                }
             }
 
             // Trigger the leveling system if message is not a command
@@ -117,7 +152,7 @@ namespace JeanPascaline
             switch (context.Message.Content.ToLower())
             {
                 case string UserMessage when UserMessage.StartsWith("salut") || UserMessage.StartsWith("hey"):
-                    await context.Channel.SendMessageAsync(Utilities.GetAlert(GuildData, "SALUT", context.User.Mention, Emote.Parse("<:AyanoBongoCat:629041865680748544>")));
+                    await context.Channel.SendMessageAsync(UtilitiesService.GetAlert(GuildData, "SALUT", context.User.Mention, Emote.Parse("<:AyanoBongoCat:629041865680748544>")));
                     break;
 
                 case string UserMessage when UserMessage.Contains("peeposalute"):

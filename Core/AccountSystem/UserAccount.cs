@@ -28,7 +28,7 @@ namespace JeanPascaline.Core.AccountSystem
         public uint NbWarnings { get; set; }
 
         public Dictionary<string, string> Warns { get; set; }
-        
+
         public ICollection<ulong> Roles { get; set; }
     }
 }

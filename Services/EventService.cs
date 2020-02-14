@@ -17,20 +17,21 @@ namespace JeanPascaline.Services
 
         internal static async Task BotJoinedGuild(SocketGuild Guild)
         {
-            if(!File.Exists(@"Ressources\Guilds\" + Guild.Id + ".json"))
+            if (!File.Exists(@"Ressources\Guilds\" + Guild.Id + ".json"))
             {
                 await File.WriteAllTextAsync(@"Ressources\Guilds\" + Guild.Id + ".json", "[]");
             }
-            
+
             if (!Guild.Roles.Contains(Guild.Roles.FirstOrDefault(x => x.Name == "Muted")))
             {
-                IRole mutedRole = await Guild.CreateRoleAsync("Muted");
+                await Guild.CreateRoleAsync("Muted");
             }
 
-            foreach(IGuildUser user in Guild.Users)
+            foreach (IGuildUser user in Guild.Users)
             {
-                if (!user.IsBot) {
-                    var target = UserAccounts.GetAccount((SocketUser)user, user.Guild.Id);
+                if (!user.IsBot)
+                {
+                    UserAccount target = UserAccounts.GetAccount((SocketUser)user, user.Guild.Id);
                     target.Roles = user.RoleIds.ToList();
                     target.Roles.Remove(user.Guild.Id);
                 }
@@ -50,9 +51,9 @@ namespace JeanPascaline.Services
             SocketTextChannel channel = Program._client.GetChannel(GuildData.AnnoucementChannelID) as SocketTextChannel;
             if (GuildData.IsDevGuild.Equals(true))
             {
-                await channel.SendMessageAsync(Utilities.GetAlert(GuildData, "DEVLEAVINGMESSAGE", User.ToString()));
+                await channel.SendMessageAsync(UtilitiesService.GetAlert(GuildData, "DEVLEAVINGMESSAGE", User.ToString()));
             }
-            else await channel.SendMessageAsync(Utilities.GetAlert(GuildData, "LEAVINGMESSAGE", User.ToString()));
+            else await channel.SendMessageAsync(UtilitiesService.GetAlert(GuildData, "LEAVINGMESSAGE", User.ToString()));
         }
 
         // Triggered when a role is deleted, remove all referencies of this role in UserAccount data.
@@ -65,7 +66,7 @@ namespace JeanPascaline.Services
             foreach (SocketUser user in arg.Guild.Users)
             {
                 UserAccount UserData = UserAccounts.GetAccount(user, GuildID);
-                if(UserData.Roles.Contains(RoleID)) UserData.Roles.Remove(RoleID);
+                if (UserData.Roles.Contains(RoleID)) UserData.Roles.Remove(RoleID);
             }
             return Task.CompletedTask;
         }
@@ -92,9 +93,9 @@ namespace JeanPascaline.Services
             GuildAccount Server = GuildAccounts.GetAccount(User.Guild);
 
             if (Server.IsDevGuild.Equals(true) && Server.IsAnnoncementMessagesEnabled.Equals(true))
-                await channel.SendMessageAsync(Utilities.GetAlert(Server, "DEVWELCOMEMESSAGE", User.Mention));
+                await channel.SendMessageAsync(UtilitiesService.GetAlert(Server, "DEVWELCOMEMESSAGE", User.Mention));
             else if (Server.IsAnnoncementMessagesEnabled.Equals(true))
-                await channel.SendMessageAsync(Utilities.GetAlert(Server, "WELCOMEMESSAGE", User.Mention));
+                await channel.SendMessageAsync(UtilitiesService.GetAlert(Server, "WELCOMEMESSAGE", User.Mention));
 
             if (NewUser.Roles.Count > 0)
             {

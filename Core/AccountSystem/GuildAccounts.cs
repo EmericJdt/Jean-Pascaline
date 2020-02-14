@@ -1,5 +1,4 @@
 ﻿using Discord.WebSocket;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -37,9 +36,9 @@ namespace JeanPascaline.Core.AccountSystem
 
         private static GuildAccount GetOrCreateAccount(SocketGuild Guild)
         {
-            var result = from a in GuildsList
-                         where a.ID == Guild.Id
-                         select a;
+            IEnumerable<GuildAccount> result = from a in GuildsList
+                                               where a.ID == Guild.Id
+                                               select a;
             GuildAccount account = result.FirstOrDefault();
             return account ?? CreateGuildAccount(Guild);
         }
@@ -49,16 +48,18 @@ namespace JeanPascaline.Core.AccountSystem
             GuildAccount newGuild = new GuildAccount()
             {
                 ID = Guild.Id,
-                AnnoucementChannelID = 0,
-                DefaultRoleID = 0,
-                ModeratorRoleID = 0,
-                MusicChannelID = 0,
-                LogChannelID = 0,
+                AnnoucementChannelID = Guild.DefaultChannel.Id,
+                DefaultRoleID = Guild.Roles.LastOrDefault().Id,
+                ModeratorRoleID = Guild.Roles.FirstOrDefault(x => x.Position == 1).Id,
+                MutedRoleID = Guild.Roles.FirstOrDefault(x => x.Name == "Muted").Id,
+                MusicChannelID = Guild.DefaultChannel.Id,
+                LogChannelID = Guild.DefaultChannel.Id,
                 MaxLevel = 70,
                 IsAnnoncementMessagesEnabled = false,
                 WarningsThreshold = 5,
                 Language = "Default",
                 Rewards = new Dictionary<ulong, uint>(),
+                ForbiddenWords = new HashSet<string>(),
             };
             GuildsList.Add(newGuild);
             SaveGuilds();

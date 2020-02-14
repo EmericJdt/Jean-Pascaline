@@ -5,6 +5,7 @@ using JeanPascaline.Core.AccountSystem;
 using JeanPascaline.Services;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace JeanPascaline.Core.LevelSystem
@@ -22,7 +23,7 @@ namespace JeanPascaline.Core.LevelSystem
 
             if (UserData.Level < GuildData.MaxLevel)
             {
-                UserData.XP += (uint)Utilities.GetRandomNumber(15, 30);
+                UserData.XP += (uint)UtilitiesService.GetRandomNumber(10, 25);
             }
 
             UserData.LastMessage = DateTime.UtcNow;
@@ -32,20 +33,27 @@ namespace JeanPascaline.Core.LevelSystem
             {
                 try
                 {
-                    EmbedAuthorBuilder LevelingAuthor = Utilities.CreateAuthorEmbed(Utilities.GetAlert(GuildData, "LEVELUPCARDTITLE", Context.Guild.ToString()), Context.Guild.IconUrl);
-                    Dictionary<object, object> FieldsData = new Dictionary<object, object>() 
+                    EmbedAuthorBuilder LevelingAuthor = UtilitiesService.CreateAuthorEmbed(UtilitiesService.GetAlert(GuildData, "LEVELUPCARDTITLE", Context.Guild.ToString()), Context.Guild.IconUrl);
+                    Dictionary<object, object> FieldsData = new Dictionary<object, object>()
                     {
-                        { Utilities.GetAlert(GuildData,"LEVELUPCARDLEVEL"), UserData.Level},
-                        { Utilities.GetAlert(GuildData, "LEVELUPCARDXP"), UserData.XP }
+                        { UtilitiesService.GetAlert(GuildData,"LEVELUPCARDLEVEL"), UserData.Level},
+                        { UtilitiesService.GetAlert(GuildData, "LEVELUPCARDXP"), UserData.XP }
                     };
 
-                    EmbedBuilder LevelingEmbed = Utilities.CreateEmbed(LevelingAuthor, Color.Green, Utilities.CreateListFields(FieldsData));
+                    EmbedBuilder LevelingEmbed = UtilitiesService.CreateEmbed(LevelingAuthor, Color.Green, UtilitiesService.CreateListFields(FieldsData));
 
                     await DM.SendMessageAsync(embed: LevelingEmbed.Build());
                 }
                 catch (Exception ex)
                 {
-                    await Utilities.SendErrorAsync(Context, ex);
+                    await UtilitiesService.SendErrorAsync(Context, ex);
+                }
+                if (GuildData.Rewards.Values.Contains(UserData.Level))
+                {
+                    foreach (KeyValuePair<ulong, uint> Reward in GuildData.Rewards.Where(x => x.Value == UserData.Level))
+                    {
+                        await ((IGuildUser)User).AddRoleAsync(Context.Guild.GetRole(Reward.Key));
+                    }
                 }
             }
         }
