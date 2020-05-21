@@ -4,7 +4,7 @@
 ## Informations
 [![](https://img.shields.io/badge/Project%20Status-In%20Progress-green?style=for-the-badge)](https://github.com/EmericJdt/SecretSantaBot/projects/1) ![](https://img.shields.io/badge/Programmation%20Language-C%23-brightgreen?style=for-the-badge) 
 
-![](https://img.shields.io/badge/Repository%20Version-2.0-critical?style=for-the-badge) ![](https://img.shields.io/badge/Actual%20Version-3.0.4-yellow?style=for-the-badge) ![](https://img.shields.io/badge/Target%20Version-4.0-purple?style=for-the-badge)
+![](https://img.shields.io/badge/Repository%20Version-4.0.0-critical?style=for-the-badge)![](https://img.shields.io/badge/Target%20Version-V5-purple?style=for-the-badge)
 
 ## Languages
 ![](https://img.shields.io/badge/Fran%C3%A7ais-Core%20language-blue?style=for-the-badge) ![](https://img.shields.io/badge/English-Translated-blue?style=for-the-badge) 
