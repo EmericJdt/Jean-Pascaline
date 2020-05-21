@@ -1,64 +1,73 @@
-﻿using System;
+﻿using Discord.WebSocket;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using Discord.WebSocket;
 
 namespace JeanPascaline.Core.AccountSystem
 {
     public static class UserAccounts
     {
 
-        private static List<UserAccount> Accounts;
+        private static List<UserAccount> ListAccount;
 
-        private static string AccountsFile = "Ressources/accounts.json";
+        private static readonly Dictionary<ulong, List<UserAccount>> GuildsList = new Dictionary<ulong, List<UserAccount>>();
 
         static UserAccounts()
         {
-            if (DataStorage.SaveExiste(AccountsFile))
+            foreach (SocketGuild Guild in Program._client.Guilds)
             {
-                Accounts = DataStorage.LoadUserAccounts(AccountsFile).ToList();
+                if (DataStorage.SaveExiste(@"Ressources/Guilds/" + Guild.Id + ".json"))
+                {
+                    ListAccount = DataStorage.LoadUserAccounts(@"Ressources/Guilds/" + Guild.Id + ".json").ToList();
+                    GuildsList.Add(Guild.Id, ListAccount);
+                }
+                else
+                {
+                    DataStorage.CreateFile(@"Ressources/Guilds/" + Guild.Id + ".json");
+                    ListAccount = new List<UserAccount>();
+                    GuildsList.Add(Guild.Id, ListAccount);
+                    DataStorage.SaveUserAccounts(ListAccount, @"Ressources/Guilds/" + Guild.Id + ".json");
+                }
             }
-            else
-            {
-                Accounts = new List<UserAccount>();
-                SaveAccounts();
-            }
         }
 
-        public static void SaveAccounts()
+        public static void SaveAccounts(ulong GuildID)
         {
-            DataStorage.SaveUserAccounts(Accounts, AccountsFile);
+            DataStorage.SaveUserAccounts(GuildsList[GuildID], @"Ressources/Guilds/" + GuildID + ".json");
         }
 
-        public static UserAccount GetAccount(SocketUser user)
+        public static UserAccount GetAccount(SocketUser user, ulong GuildID)
         {
-            return GetOrCreateAccount(user.Id, user.ToString());
-            
+            return GetOrCreateAccount(user.Id, user.ToString(), GuildID);
         }
 
-        private static UserAccount GetOrCreateAccount(ulong id, string hashcode)
+        private static UserAccount GetOrCreateAccount(ulong id, string hashcode, ulong GuildID)
         {
-            var result = from a in Accounts
-                         where a.ID == id
-                         select a;
-            var account = result.FirstOrDefault();
-            if(account == null) account = CreateUserAccount(id, hashcode);
+            ListAccount = GuildsList[GuildID];
+            IEnumerable<UserAccount> result = from a in ListAccount
+                                              where a.ID == id
+                                              select a;
+            UserAccount account = result.FirstOrDefault();
+            if (account == null) account = CreateUserAccount(id, hashcode, GuildID);
             return account;
         }
 
-        private static UserAccount CreateUserAccount(ulong id, string hashcode)
+        private static UserAccount CreateUserAccount(ulong id, string hashcode, ulong GuildID)
         {
-            var newAccount = new UserAccount()
+            UserAccount newAccount = new UserAccount()
             {
                 ID = id,
                 Hashcode = hashcode,
+                Pronouns = "***",
+                Description = "***",
                 LastMessage = DateTime.UtcNow,
                 NbWarnings = 0,
-                XP = 0
+                XP = 0,
+                Warns = new Dictionary<string, string>(),
+                Roles = new List<ulong>(),
             };
-            Accounts.Add(newAccount);
-            SaveAccounts();
+            ListAccount.Add(newAccount);
+            SaveAccounts(GuildID);
             return newAccount;
         }
     }

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace JeanPascaline.Core.AccountSystem
 {
@@ -9,6 +8,10 @@ namespace JeanPascaline.Core.AccountSystem
         public ulong ID { get; set; }
 
         public string Hashcode { get; set; }
+
+        public string Pronouns { get; set; }
+
+        public string Description { get; set; }
 
         public uint XP { get; set; }
 
@@ -23,5 +26,9 @@ namespace JeanPascaline.Core.AccountSystem
         public DateTime LastMessage { get; set; }
 
         public uint NbWarnings { get; set; }
+
+        public Dictionary<string, string> Warns { get; set; }
+
+        public ICollection<ulong> Roles { get; set; }
     }
 }

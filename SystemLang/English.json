@@ -1,0 +1,166 @@
+{
+  "SALUT": "Hey {0} ! {1}",
+  "PATPAT": "{0} patpat's {1}.",
+  "HUG" : "{0} gives a hug to {1}.",
+  "NYAH": "{0} uses the almighty power of nyah on {1}.",
+  
+  "WELCOMEMESSAGE": "Welcome {0} <:FunOmaewamoushindeiru430417362802704396>\nGive them a warm welcome !",
+  "LEAVINGMESSAGE": "SHIT ! **{0}** was shattered across time and space... <:FunKiss:430417443928932353>",
+  
+  "PROFILECARDNAME": "Pseudonym :",
+  "PROFILECARDPRONOUNS": "Pronouns :",
+  "PROFILECARDJOINEDAT": "Arrived on :",
+  "PROFILECARDDESCRIPTION": "Description :",
+  "PROFILECARDLEVEL": "Current level :",
+  "PROFILECARDWARNCOUNT": "Number of warnings :",
+  "PROFILECARDWARNLIST": "Warnings :",
+  "PROFILECARDXP": "Experience points :",
+
+  "PROFILECHANGEDESCRIPTION": "{0} - Your description has been modified. <:FunKiss:430417443928932353>",
+  "PROFILECHANGEPRONOUNS": "{0} - Your pronouns have been modified. ",
+    
+  "NOREWARDS": "{0} - Oh.. seems like I don't have a reward for you. <:FunSuprised:430405269202403339>",
+  "REWARDSRESPONSE": "Here {0} ! For now you're level {1}, and there's still some rewards you can get. <:FunKiss:430417443928932353>",
+  "REWARDSCARDLEVEL": "Level {0} :", 
+  "REWARDLISTTITLE": "Liste des récompenses.",
+  
+  "INVITEREQUEST": "Here's the server's invite, use it wisely. <{0}>",
+ 
+  "LEVELUPCARDTITLE":"LEVEL UP !",
+  "LEVELUPCARDLEVEL":"Current level :",
+  "LEVELUPCARDXP": "Experience points :",
+  
+  "INDEXCARDTITLE": "Commands.",
+  "INDEXAUDIOCARDTITLE": "Audio Commands.",
+  "INDEXMODCARDTITLE": "Moderation Commands.",
+  "INDEXADMCARDTITLE": "Administration Commands.",
+  "INDEXDEVCARDTITLE": "Special Commands.",
+
+  "MODULELISTTITLE": "Modules list",
+  "MODULEFOOTEREMBED": "Use !{0} to show commands.",
+ 
+
+
+
+
+
+
+  "USERISNOTINVOICECHANNEL": "You're not in a voice channel.",
+  "BOTHASJOINED": "Don't move ! I'm coming in \"**{0}**\" !",
+  "BOTHASLEAVED": "Ok, i'm leaving \"**{0}**\".",
+  "SEARCHINGRESULT": "Here's what I've found ! Choose a track from the list.",
+  "NOMORETRACKS": "There's no music in the queue.",
+  "TRACKADDEDTOQUEUE": "\"**{0}**\" has been added to the queue.",
+  "TRACKISPLAYING": "Alright ! I'll play \"**{0}**\"",
+  "ERRORPLAYER": "Oh... I think there might be a problem...",
+  "TRACKISSTOPPED": "I've stopped the track.",
+  "NOTHINGINQUEUE": "I can't skip the track if there's nothing in the queue. <:FunSuprised:430405269202403339>",
+  "TRACKISSKIPPED": "Alright, let's forget \"**{0}**\"and skip to \"**{1}**\"",
+  "PLAYERPAUSED": "Ok, I'll pause the player.",
+  "PLAYERVOLUMEUPDATED": "The volume has been adjusted to {0}.",
+  "PLAYERRESUMED": "Want to keep listening ? Ok. <:FunOmaewamoushindeiru:430417362802704396>",
+  "PLAYERWASNOTPLAYING" : "I wasn't playing anything in the first place. <:FunSmirk:430417192098725888>",
+  "PLAYERWASNOTPAUSED": "I'm already playing music... <:FunSmirk:430417192098725888>",
+  "ONLYONEVOTE": "You can't vote twice. <:FunSmirk:430417192098725888>",
+  "NOTRACKSONQUEUE": "There's no music in the queue... <:FunSuprised:430405269202403339>",
+  "LOWPERCENTAGE": "Too bad ! At least 50 percent of the people present must agree to have your music played. <:FunSmirk:430417192098725888>",
+  "REPEATSTATECHANGED": "Ok ! It's been noted. <:FunKiss:430417443928932353>",
+  "QUEUECARDTITLE": "Playlist.",
+
+
+
+
+
+
+
+  "COMMANDONMOD": "**It's impossible to use this command on a Moderator.** <:FunSuprised:430405269202403339>",
+  "DENIED": "You don't have the permission to use this command. <:FunKiss:430417443928932353>",
+	
+  "ANNONCEBAN": "**Received ! {0} was banned from the server.\nMotive : {1}**",
+  "BANCARDTITLE": "[BAN]",
+  
+  "ANNONCEUNBAN": "**Motive ! {0}** was banned from the server.**",
+  "UNBANCARDTITLE": "[UNBAN]",
+  
+  "ANNONCEKICK": "**Got it ! {0} was kicked from the server.\nReason : {1} **",
+  "KICKCARDTITLE": "[KICK]",
+  
+  "ANNONCEMUTE": "**Got it ! {0} has been muted.\nReason : {1}**",
+  "MUTECARDTITLE": "[MUTE]",
+  
+  "ANNONCEUNMUTE": "**Got it ! {0} has been unmuted.**",
+  "UNMUTECARDTITLE": "[UNMUTE]",
+  
+  "ANNONCEWARN": "**Got it ! {0} has received a warning.\nReason : {1}**",
+  "WARNCARDTITLE": "[WARN]",
+  "WARNCARDCOUNTFIELD": "Number of warnings :",
+  
+  "RETRAITWARNS": "**Got it ! {0} warnings have been cleared.**",
+  "UNWARNCARDTITLE": "[UNWARN]",
+  
+  "CLEANMESSAGES": "{0} messages have been deleted. <:FunKiss:430417443928932353>",
+  
+  "CLEARPROFILE": "Got it ! {0}'s profile has been reset.\nReason : {1}<:FunBlank:430417474068938762>",
+  "CLEARPROFILECARDTITLE": "[PROFILE RESET]",
+  
+  "INVITEREQUESTCARDTITLE": "[INVITE REQUEST]",
+  
+  "CARDUSERFIELD": "User :",
+  "CARDMODFIELD": "Moderator :",
+  "CARDREASONFIELD": "Reason :",
+  
+
+
+  
+  
+  
+  
+  "UNSUCESSFULGIVE": "Sadly {0} is already at the highest level.",
+  "UNSUCESSFULTAKE": "Sadly {0} doesn't have enough expierence points.",
+  "GIVEXP": "Got it ! {0} experience points have been given to {1}.",
+  "TAKEXP": "Got it ! {0} experience points have been taken away from {1}.",
+  
+  "REWARDADDED": "{0} - The role was successfully added to rewards. <:FunBlank:430417474068938762>",
+  "REWARDREMOVED": "{0} - The role was successfully removed from rewards. <:FunSmile:430404996752998410>",
+  
+  "WORDADDED": "{0} - This word has been added to the banned list. <:FunSmile:430404996752998410>",
+  "WORDREMOVED": "{0} - This word has been removed from the banned list. <:FunSmile:430404996752998410>",
+
+  "SETWELCOMEMESSAGE": "{0} - The welcome message has been activated.",
+  "REMOVEWELCOMEMESSAGE": "{0} - The welcome message has been disactivated.",
+    
+  "CHANGESSAVED": "{0} - This change has been put in place.",
+  "PARAMEMBEDFOOTER": "Use !{0} to change the setting.",
+  
+  "LANGUAGELISTTITLE": "Language list.",
+  "CODELISTTITLE": "Codes list.",
+  "SETLANGUAGE": "{0} - The bot's language has set to english.",
+  
+  
+  
+  
+  
+  
+  
+  
+  "MOT1": "You can't wait until you're perfect to begin something good. - Abbé Pierre.\n",
+  "MOT2": "I've decided to be happy because it's good for my health. - Voltaire\n",
+  "MOT3": "Success isn't key to happiness. Happiness isn't key to success. If you enjoy what you do, you'll succeed. - Albert Schweitzer\n",
+  "MOT4": "Success consists of going from failure to failure without loss of enthusiasm. - Winston Churchill\n",
+  "MOT5": "Winners find ways, losers find excuses. - Franklin D. Roosevelt\n",
+  "MOT6": "Some people want it to happen, some wish it would happen, others make it happen. - Michael Jordan\n",
+  "MOT7": "That's what I tell myself every morning, I'm gonna work 4 times harder to be 4 times better than them. - Wil Aime.\n",
+  "MOT8": "Everyone's a genius. But if you judge a fish on it's capcity to climb a tree, it'll pass it's whole life thinking it's stupid. - Albert Einstein\n",
+  "MOT9": "I'm grateful to everyone who's told me no. It's thanks to them that I'm myself. - Albert Einstein\n",
+  "MOT10": "Be yourself, everybody else is already taken. -  Oscar Wilde\n",
+  "MOT11": "In twenty years, you'll be more disappointed by the things you haven't done than by those you have done. So step off your path. Set sail. Explore. Dream. Discover. - Mark Twain\n",
+  "MOT12": "The most important things in the world were accomplished by people who continued to try when there seemed to be no hope. - Dale Carnegie\n",
+  "MOT13": "To succeed, remember these three things: to see is to know, to know is to be capable, to try is to have. - Alfred de Musset\n",
+  "MOT14": "A pessimist sees the difficulties in each opportunity, an optimist sees the opportunities in each difficulty. - Winston Churchill\n",
+  "MOT15": "Believe in your dreams and they might come true. Believe in yourself and they will come true. - Martin Luther King\n",
+  "MOT16": "To succeed, your desire to succeed must outweigh your fear to fail. - Bill Cosby\n",
+  "MOT17": "If today you don't do what your head is telling you to do, tomorrow, you'll find what your head told you in your ass. - Coluche\n",
+  "MOT18": "The future's doors are open to those willing to open them. - Coluche\n",
+  "MOT19": "Shooting for the stars doesn't scare me ! - Amel Bent\n",
+  "MOT20": "If you think that you're not worth a lot, you'll never find someone to up your worth. - Michael Aguilar\n",
+}
